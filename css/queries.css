@@ -1,0 +1,182 @@
+@media screen and (min-width: 1501px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+/* 1500px Breakpoint */
+
+@media screen and (max-width: 1500px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* 1040px breakpoint */
+@media screen and (max-width: 1040px) {
+  header {
+    display: grid;
+    grid-template-columns: 70fr 30fr;
+    grid-gap: 1rem;
+  }
+
+  #logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    align-self: center;
+  }
+
+  .social-header {
+    grid-column: 2 / -1;
+    justify-self: end;
+  }
+
+  nav {
+    margin-left: 15px;
+  }
+
+  nav > ul {
+    justify-self: flex-end;
+  }
+
+  nav > ul > li {
+    padding-right: 0;
+    padding-left: 2rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 1040 Breakpoint Mission */
+
+  .mission-container {
+    padding: 4rem;
+  }
+
+  .mission {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 5rem;
+  }
+
+  .life-mission {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .me {
+    grid-column: 1 / span 2;
+  }
+
+  /* 1040 Breakpoint Portfolio */
+
+  .portfolio > ul {
+    display: grid;
+    grid-template-columns: 25rem 25rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .portfolio > h3 {
+    border-radius: 0;
+  }
+
+  /* 1040 Breakpoint Footer */
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    justify-items: flex-start;
+  }
+
+  .copy {
+    grid-row: 2 / 3;
+    grid-column: 1 span 2;
+  }
+
+  .footer-links {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+}
+
+/* 850 Breakpoint */
+
+@media screen and (max-width: 850px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    margin-left: 0;
+  }
+
+  nav > ul {
+    align-self: left;
+  }
+
+  nav > ul > li:first-child {
+    padding-left: 0;
+  }
+
+  .mission-container {
+    padding: 2rem;
+  }
+}
+
+/* 740px Breakpoint */
+
+@media screen and (max-width: 740px) {
+  /* Footer */
+
+  .footer-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio > ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* 600px Breakpoint */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+
+  .portfolio {
+    width: 100%;
+  }
+
+  /* Life Tools */
+
+  .tools > ul {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* 320px Breakpoint */
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 50%;
+  }
+
+  .portfolio > ul {
+    padding: 0;
+  }
+
+  footer {
+    padding: 1.5rem 5.4rem 5.4rem 1.5rem;
+  }
+}
