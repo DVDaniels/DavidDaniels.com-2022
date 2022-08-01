@@ -150,7 +150,11 @@
 /* 600px Breakpoint */
 @media screen and (max-width: 600px) {
   html {
-    font-size: 50%;
+    font-size: 70%;
+  }
+
+  .mission {
+    padding: 0;
   }
 
   .portfolio {
